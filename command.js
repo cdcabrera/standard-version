@@ -1,6 +1,6 @@
-const spec = require('conventional-changelog-config-spec')
-const { getConfiguration } = require('./lib/configuration')
-const defaults = require('./defaults')
+const spec = require('conventional-changelog-config-spec');
+const { getConfiguration } = require('./lib/configuration');
+const defaults = require('./defaults');
 
 const yargs = require('yargs')
   .usage('Usage: $0 [options]')
@@ -30,7 +30,8 @@ const yargs = require('yargs')
   })
   .option('message', {
     alias: ['m'],
-    describe: '[DEPRECATED] Commit message, replaces %s with new version.\nThis option will be removed in the next major version, please use --releaseCommitMessageFormat.',
+    describe:
+      '[DEPRECATED] Commit message, replaces %s with new version.\nThis option will be removed in the next major version, please use --releaseCommitMessageFormat.',
     type: 'string'
   })
   .option('first-release', {
@@ -58,7 +59,7 @@ const yargs = require('yargs')
     default: defaults.commitAll
   })
   .option('silent', {
-    describe: 'Don\'t print logs and errors',
+    describe: "Don't print logs and errors",
     type: 'boolean',
     default: defaults.silent
   })
@@ -92,7 +93,8 @@ const yargs = require('yargs')
   })
   .option('changelogHeader', {
     type: 'string',
-    describe: '[DEPRECATED] Use a custom header when generating and updating changelog.\nThis option will be removed in the next major version, please use --header.'
+    describe:
+      '[DEPRECATED] Use a custom header when generating and updating changelog.\nThis option will be removed in the next major version, please use --header.'
   })
   .option('preset', {
     type: 'string',
@@ -103,13 +105,13 @@ const yargs = require('yargs')
     type: 'string',
     describe: 'Name of the package from which the tags will be extracted'
   })
-  .check((argv) => {
+  .check(argv => {
     if (typeof argv.scripts !== 'object' || Array.isArray(argv.scripts)) {
-      throw Error('scripts must be an object')
+      throw Error('scripts must be an object');
     } else if (typeof argv.skip !== 'object' || Array.isArray(argv.skip)) {
-      throw Error('skip must be an object')
+      throw Error('skip must be an object');
     } else {
-      return true
+      return true;
     }
   })
   .alias('version', 'v')
@@ -118,16 +120,16 @@ const yargs = require('yargs')
   .example('$0 -m "%s: see changelog for details"', 'Update changelog and tag release with custom commit message')
   .pkgConf('standard-version')
   .config(getConfiguration())
-  .wrap(97)
+  .wrap(97);
 
 Object.keys(spec.properties).forEach(propertyKey => {
-  const property = spec.properties[propertyKey]
+  const property = spec.properties[propertyKey];
   yargs.option(propertyKey, {
     type: property.type,
     describe: property.description,
     default: defaults[propertyKey] ? defaults[propertyKey] : property.default,
     group: 'Preset Configuration:'
-  })
-})
+  });
+});
 
-module.exports = yargs
+module.exports = yargs;
