@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`checkpoint should attempt to display console messaging: console 1`] = `
+Array [
+  Array [
+    "<yellow>✔</yellow> undefined <bold>lorem ipsum</bold>",
+  ],
+  Array [
+    "<green>✔</green> undefined <bold>lorem ipsum</bold>",
+  ],
+  Array [
+    "mock-figure undefined <bold>lorem ipsum</bold>",
+  ],
+  Array [
+    "mock-figure dolor sit <bold>lorem ipsum</bold>",
+  ],
+]
+`;

@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`updaters should attempt to run updaters with an invalid format: console messages 1`] = `
+Array [
+  Array [
+    "Unable to obtain updater for: \\"invalid updater\\"
+ - Error: Unsupported file (invalid updater) provided for bumping.
+ Please specify the updater \`type\` or use a custom \`updater\`.
+ - Skipping...",
+  ],
+]
+`;
+
+exports[`updaters should attempt to run updaters with an invalid format: invalid updater, string 1`] = `"Cannot read property 'readVersion' of undefined"`;
+
+exports[`updaters should attempt to run updaters with other formats: console messages 1`] = `Array []`;
+
+exports[`updaters should attempt to run updaters with other formats: updaters 1`] = `
+Object {
+  "mockUpdaterFilename": Object {
+    "filename": "Lorem ipsum filename",
+    "readVersion": [Function],
+    "writeVersion": [Function],
+  },
+  "mockUpdaterString": Object {
+    "readVersion": [Function],
+    "updater": "Lorem ipsum mock",
+    "writeVersion": [Function],
+  },
+  "mockUpdaterType": Object {
+    "readVersion": [Function],
+    "type": "json",
+    "writeVersion": [Function],
+  },
+  "mockValidUpdater": Object {
+    "mockUpdater": "Lorem ipsum mock",
+    "readVersion": [Function],
+    "writeVersion": [Function],
+  },
+}
+`;

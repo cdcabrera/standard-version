@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`plain-text updaters should read version information: read 1`] = `"{\\"version\\":\\"lorem ipsum\\"}"`;
+
+exports[`plain-text updaters should return version information to write: write 1`] = `"dolor sit"`;

@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`run-lifecycle-script should attempt to exec commands: command results 1`] = `
+Object {
+  "dryRunResults": undefined,
+  "echoCmdResults": "lorem ipsum
+",
+  "errorResults": "dolor sit error
+",
+  "errorResultsStdOut": "",
+  "scriptMismatchResults": undefined,
+}
+`;
+
+exports[`run-lifecycle-script should attempt to exec commands: console messages 1`] = `
+Object {
+  "info": Array [
+    Array [
+      "<green>✔</green> Running lifecycle script \\"<bold>lorem</bold>\\"",
+    ],
+    Array [
+      "<blue>ℹ</blue> - execute command: \\"<bold>echo \\"dry run\\"</bold>\\"",
+    ],
+    Array [
+      "<green>✔</green> Running lifecycle script \\"<bold>lorem</bold>\\"",
+    ],
+    Array [
+      "<blue>ℹ</blue> - execute command: \\"<bold>echo \\"lorem ipsum\\"</bold>\\"",
+    ],
+    Array [
+      "<green>✔</green> Running lifecycle script \\"<bold>lorem</bold>\\"",
+    ],
+    Array [
+      "<blue>ℹ</blue> - execute command: \\"<bold>echo \\"dolor sit error\\" && exit 0</bold>\\"",
+    ],
+    Array [
+      "<green>✔</green> Running lifecycle script \\"<bold>lorem</bold>\\"",
+    ],
+    Array [
+      "<blue>ℹ</blue> - execute command: \\"<bold>echo \\"dolor sit stdout error\\" 1>&2 && exit 0</bold>\\"",
+    ],
+  ],
+  "warn": Array [
+    Array [
+      "<yellow>dolor sit stdout error
+</yellow>",
+    ],
+  ],
+}
+`;

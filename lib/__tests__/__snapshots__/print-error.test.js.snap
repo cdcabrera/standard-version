@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`print-error should pass and run console methods: console messages 1`] = `
+Array [
+  Array [
+    "<red>undefined</red>",
+  ],
+  Array [
+    "<red>lorem ipsum</red>",
+  ],
+  Array [
+    "<green>dolor sit</green>",
+  ],
+]
+`;

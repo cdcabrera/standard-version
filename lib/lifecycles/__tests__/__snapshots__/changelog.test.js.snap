@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`changelog should attempt to update changelog: console 1`] = `
+Array [
+  Array [
+    "<green>✔</green> outputting changes to <bold>/.fixtures/CHANGELOG_ATTEMPT.md</bold>",
+  ],
+]
+`;
+
+exports[`changelog should attempt to update changelog: results 1`] = `
+Object {
+  "changelogUpdate": "undefined
+## [2.0.0](https://github.com/conventional-changelog/standard-version/compare/v1.1.0...v2.0.0) (2022-06-02)
+
+### Features
+
+* **deprecated:** add deprecation message ([#907](https://github.com/conventional-changelog/standard-version/issues/907)) ([XXXXXXX](https://github.com/conventional-changelog/standard-version/commit/XXXXXXX))
+
+<a name=\\"1.1.0\\"></a>
+# [1.1.0](https://github.com/conventional-changelog/standard-version/compare/v1.0.0...v1.1.0) (2022-06-01)
+
+### Bug Fixes
+
+* corrected an issue ([#123](https://github.com/conventional-changelog/standard-version/issues/123)) ([XXXXXXX](https://github.com/conventional-changelog/standard-version/commit/XXXXXXX))
+",
+}
+`;
+
+exports[`changelog should skip setting up changelog: console 1`] = `Array []`;
+
+exports[`changelog should skip setting up changelog: results 1`] = `
+Object {
+  "changelogInvalid": undefined,
+}
+`;
+
+exports[`changelog should update changelog: console 1`] = `
+Array [
+  Array [
+    "<green>✔</green> outputting changes to <bold>/.fixtures/CHANGELOG_UPDATE.md</bold>",
+  ],
+]
+`;

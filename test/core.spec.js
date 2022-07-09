@@ -1,5 +1,3 @@
-/* global describe it afterEach */
-
 'use strict';
 
 const shell = require('shelljs');
@@ -221,7 +219,7 @@ describe('cli', function () {
     });
   });
 
-  describe('lifecycle scripts', () => {
+  describe('lifecycle scripts', function () {
     describe('prerelease hook', function () {
       it('should run the prerelease hook when provided', async function () {
         const flush = mock({
@@ -604,7 +602,7 @@ describe('standard-version', function () {
     getPackageVersion().should.equal('1.1.0');
   });
 
-  describe('skip', () => {
+  describe('skip', function () {
     it('allows bump and changelog generation to be skipped', async function () {
       const changelogContent = 'legacy header format<a name="1.0.0">\n';
       mock({
@@ -620,7 +618,7 @@ describe('standard-version', function () {
     });
   });
 
-  it('does not update files present in .gitignore', async () => {
+  it('does not update files present in .gitignore', async function () {
     mock({
       bump: 'minor',
       fs: {
@@ -642,7 +640,7 @@ describe('standard-version', function () {
     getPackageVersion().should.equal('1.1.0');
   });
 
-  describe('configuration', () => {
+  describe('configuration', function () {
     it('--header', async function () {
       mock({ bump: 'minor', fs: { 'CHANGELOG.md': '' } });
       await exec('--header="# Welcome to our CHANGELOG.md"');
@@ -661,7 +659,7 @@ describe('standard-version', function () {
     });
   });
 
-  describe('pre-major', () => {
+  describe('pre-major', function () {
     it('bumps the minor rather than major, if version < 1.0.0', async function () {
       mock({
         bump: 'minor',

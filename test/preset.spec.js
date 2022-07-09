@@ -1,5 +1,3 @@
-/* global describe it beforeEach, afterEach */
-
 const shell = require('shelljs');
 const fs = require('fs');
 
@@ -12,7 +10,7 @@ function exec(opt) {
   return require('../lib/index')(opt);
 }
 
-describe('presets', () => {
+describe('presets', function () {
   beforeEach(function () {
     shell.rm('-rf', 'tmp');
     shell.config.silent = true;

@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`formatCommitMessage should format a commit message: format 1`] = `"lorem ipsum, 0.0.0"`;

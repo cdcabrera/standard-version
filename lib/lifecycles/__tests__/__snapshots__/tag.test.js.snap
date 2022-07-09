@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tag should run lifecycles returning tag information: console 1`] = `
+Array [
+  Array [
+    "<green>✔</green> Running lifecycle script \\"<bold>pretag</bold>\\"",
+  ],
+  Array [
+    "<blue>ℹ</blue> - execute command: \\"<bold>echo \\"pretag lifecycle mock\\"</bold>\\"",
+  ],
+  Array [
+    "<green>✔</green> tagging release <bold>undefined</bold><bold>lorem ipsum</bold>",
+  ],
+  Array [
+    Array [
+      Object {
+        "bumpFiles": Array [],
+        "scripts": Object {
+          "posttag": "echo \\"posttag lifecycle mock\\"",
+          "prerelease": "echo \\"prerelease lifecycle mock\\"",
+          "pretag": "echo \\"pretag lifecycle mock\\"",
+        },
+        "skip": Object {},
+      },
+      "git",
+      Array [
+        "tag",
+        "-a",
+        "undefinedlorem ipsum",
+        "-m",
+        "undefined",
+      ],
+    ],
+  ],
+  Array [
+    Array [
+      "",
+      "git",
+      Array [
+        "rev-parse",
+        "--abbrev-ref",
+        "HEAD",
+      ],
+    ],
+  ],
+  Array [
+    "<blue>ℹ</blue> Run \`<bold>git push --follow-tags origin mock-exec-file-response</bold>\` to publish",
+  ],
+  Array [
+    "<green>✔</green> Running lifecycle script \\"<bold>posttag</bold>\\"",
+  ],
+  Array [
+    "<blue>ℹ</blue> - execute command: \\"<bold>echo \\"posttag lifecycle mock\\"</bold>\\"",
+  ],
+]
+`;
+
+exports[`tag should skip returning tag information: console 1`] = `Array []`;

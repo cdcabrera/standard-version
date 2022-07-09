@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`write-file should attempt to write a file: write 1`] = `
+Array [
+  Array [
+    "lorem/ipsum/dolor.sit",
+    "hello world",
+    "utf8",
+  ],
+]
+`;

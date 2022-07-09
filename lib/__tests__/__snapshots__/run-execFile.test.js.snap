@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`run-execFile should attempt to execFile commands: command results 1`] = `
+Object {
+  "dryRunResults": undefined,
+  "echoCmdResults": "lorem ipsum
+",
+}
+`;

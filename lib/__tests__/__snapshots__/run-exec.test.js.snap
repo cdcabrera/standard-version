@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`run-exec should attempt to exec commands: command results 1`] = `
+Object {
+  "dryRunResults": undefined,
+  "echoCmdResults": "lorem ipsum
+",
+  "errorResults": "dolor sit error
+",
+  "errorResultsStdOut": "",
+}
+`;
+
+exports[`run-exec should attempt to exec commands: console messages 1`] = `
+Array [
+  Array [
+    "<yellow>dolor sit stdout error
+</yellow>",
+  ],
+]
+`;

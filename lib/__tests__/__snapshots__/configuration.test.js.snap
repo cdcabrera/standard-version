@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`configuration should attempt to getConfiguration: getConfiguration 1`] = `
+Object {
+  "types": Array [
+    Object {
+      "section": "Features",
+      "type": "feat",
+    },
+    Object {
+      "section": "Bug Fixes",
+      "type": "fix",
+    },
+    Object {
+      "hidden": true,
+      "section": "Tests",
+      "type": "test",
+    },
+    Object {
+      "hidden": true,
+      "section": "Build System",
+      "type": "build",
+    },
+    Object {
+      "hidden": true,
+      "type": "ci",
+    },
+  ],
+}
+`;

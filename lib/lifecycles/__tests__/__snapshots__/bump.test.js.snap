@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`bump should run first release returning version information: console 1`] = `
+Array [
+  Array [
+    "<green>✔</green> Running lifecycle script \\"<bold>prerelease</bold>\\"",
+  ],
+  Array [
+    "<blue>ℹ</blue> - execute command: \\"<bold>echo \\"prerelease first release mock\\"</bold>\\"",
+  ],
+  Array [
+    "<red>✖</red> skip version bump on first release",
+  ],
+]
+`;
+
+exports[`bump should run first release returning version information: results 1`] = `
+Object {
+  "bumpReleaseFirst": "0.1.0",
+}
+`;
+
+exports[`bump should run lifecycles returning version information: console 1`] = `
+Array [
+  Array [
+    "<green>✔</green> Running lifecycle script \\"<bold>prerelease</bold>\\"",
+  ],
+  Array [
+    "<blue>ℹ</blue> - execute command: \\"<bold>echo \\"prerelease lifecycle mock\\"</bold>\\"",
+  ],
+  Array [
+    "<green>✔</green> Running lifecycle script \\"<bold>prebump</bold>\\"",
+  ],
+  Array [
+    "<blue>ℹ</blue> - execute command: \\"<bold>echo \\"prebump lifecycle mock\\"</bold>\\"",
+  ],
+  Array [
+    "<green>✔</green> Running lifecycle script \\"<bold>postbump</bold>\\"",
+  ],
+  Array [
+    "<blue>ℹ</blue> - execute command: \\"<bold>echo \\"postbump lifecycle mock\\"</bold>\\"",
+  ],
+]
+`;
+
+exports[`bump should run lifecycles returning version information: results 1`] = `
+Object {
+  "bumpLifecycle": null,
+}
+`;
+
+exports[`bump should run release-as returning version information: console 1`] = `
+Array [
+  Array [
+    "<green>✔</green> Running lifecycle script \\"<bold>prerelease</bold>\\"",
+  ],
+  Array [
+    "<blue>ℹ</blue> - execute command: \\"<bold>echo \\"prerelease releaseAs mock\\"</bold>\\"",
+  ],
+  Array [
+    "<green>✔</green> Running lifecycle script \\"<bold>prerelease</bold>\\"",
+  ],
+  Array [
+    "<blue>ℹ</blue> - execute command: \\"<bold>echo \\"prerelease releaseAsStdout mock\\"</bold>\\"",
+  ],
+  Array [
+    "<green>✔</green> Running lifecycle script \\"<bold>prebump</bold>\\"",
+  ],
+  Array [
+    "<blue>ℹ</blue> - execute command: \\"<bold>echo \\"2.0.0\\"</bold>\\"",
+  ],
+  Array [
+    "<green>✔</green> Running lifecycle script \\"<bold>prerelease</bold>\\"",
+  ],
+  Array [
+    "<blue>ℹ</blue> - execute command: \\"<bold>echo \\"prerelease release mock\\"</bold>\\"",
+  ],
+  Array [
+    "<green>✔</green> Running lifecycle script \\"<bold>prerelease</bold>\\"",
+  ],
+  Array [
+    "<blue>ℹ</blue> - execute command: \\"<bold>echo \\"prerelease release patch mock\\"</bold>\\"",
+  ],
+  Array [
+    "<green>✔</green> Running lifecycle script \\"<bold>prerelease</bold>\\"",
+  ],
+  Array [
+    "<blue>ℹ</blue> - execute command: \\"<bold>echo \\"prerelease release minor mock\\"</bold>\\"",
+  ],
+  Array [
+    "<green>✔</green> Running lifecycle script \\"<bold>prerelease</bold>\\"",
+  ],
+  Array [
+    "<blue>ℹ</blue> - execute command: \\"<bold>echo \\"prerelease release major mock\\"</bold>\\"",
+  ],
+]
+`;
+
+exports[`bump should run release-as returning version information: results 1`] = `
+Object {
+  "bumpRelease": "0.0.1",
+  "bumpReleaseAs": "1.5.0",
+  "bumpReleaseAsStdout": "2.0.0",
+  "bumpReleaseMajor": "1.0.0",
+  "bumpReleaseMinor": "0.1.0",
+  "bumpReleasePatch": "0.0.1",
+}
+`;
+
+exports[`bump should skip returning version information: console 1`] = `Array []`;
+
+exports[`bump should skip returning version information: results 1`] = `
+Object {
+  "bumpSkip": "lorem ipsum",
+}
+`;

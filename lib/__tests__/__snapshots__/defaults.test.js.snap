@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`defaults should have defined properties: properties 1`] = `
+Object {
+  "bumpFiles": Array [
+    "package.json",
+    "bower.json",
+    "manifest.json",
+    "package-lock.json",
+    "npm-shrinkwrap.json",
+  ],
+  "commitAll": false,
+  "commitUrlFormat": "{{host}}/{{owner}}/{{repository}}/commit/{{hash}}",
+  "compareUrlFormat": "{{host}}/{{owner}}/{{repository}}/compare/{{previousTag}}...{{currentTag}}",
+  "dryRun": false,
+  "firstRelease": false,
+  "gitTagFallback": true,
+  "header": "# Changelog
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+",
+  "infile": "CHANGELOG.md",
+  "issuePrefixes": Array [
+    "#",
+  ],
+  "issueUrlFormat": "{{host}}/{{owner}}/{{repository}}/issues/{{id}}",
+  "noVerify": false,
+  "packageFiles": Array [
+    "package.json",
+    "bower.json",
+    "manifest.json",
+  ],
+  "preMajor": false,
+  "preset": undefined,
+  "releaseCommitMessageFormat": "chore(release): {{currentTag}}",
+  "scripts": Object {},
+  "sign": false,
+  "silent": false,
+  "skip": Object {},
+  "tagPrefix": "v",
+  "types": Array [
+    Object {
+      "section": "Features",
+      "type": "feat",
+    },
+    Object {
+      "section": "Bug Fixes",
+      "type": "fix",
+    },
+    Object {
+      "hidden": true,
+      "type": "chore",
+    },
+    Object {
+      "hidden": true,
+      "type": "docs",
+    },
+    Object {
+      "hidden": true,
+      "type": "style",
+    },
+    Object {
+      "hidden": true,
+      "type": "refactor",
+    },
+    Object {
+      "hidden": true,
+      "type": "perf",
+    },
+    Object {
+      "hidden": true,
+      "type": "test",
+    },
+  ],
+  "userUrlFormat": "{{host}}/{{user}}",
+}
+`;

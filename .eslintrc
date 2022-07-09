@@ -1,24 +1,43 @@
 {
   "env": {
-    "es2018": true
+    "es2018": true,
+    "jest": true,
+    "mocha": true
   },
-  "plugins": [
-    "node",
-    "prettier"
-  ],
+  "plugins": ["node", "prettier"],
   "extends": [
     "eslint:recommended",
     "plugin:node/recommended",
     "plugin:prettier/recommended"
   ],
+  "overrides": [
+    {
+      "files": ["test/**/*.js"],
+      "plugins": ["mocha"],
+      "extends": [
+        "plugin:mocha/recommended"
+      ],
+      "rules": {
+        "mocha/no-setup-in-describe": 1
+      }
+    },
+    {
+      "files": ["tests/**/*.js", "lib/**/*.js"],
+      "plugins": ["jest"],
+      "extends": [
+        "plugin:jest/recommended"
+      ],
+      "globals": {
+        "__basedir": "readonly",
+        "generateFixture": "readonly"
+      }
+    }
+  ],
   "parserOptions": {
     "ecmaVersion": 2018
   },
   "rules": {
-    "arrow-parens": [
-      "error",
-      "as-needed"
-    ],
+    "arrow-parens": ["error", "as-needed"],
     "comma-dangle": 0,
     "consistent-return": 1,
     "max-len": [
@@ -36,8 +55,9 @@
     "node/shebang": 0,
     "node/no-unpublished-bin": 0,
     "node/no-unpublished-require": [
-      "error", {
-        "allowModules": ["shelljs", "mockery", "mock-fs","std-mocks", "chai"]
+      "error",
+      {
+        "allowModules": ["shelljs", "mockery", "mock-fs", "std-mocks", "chai"]
       }
     ],
     "padded-blocks": 0,

@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`commit should run lifecycles returning commit information: console 1`] = `
+Array [
+  Array [
+    "<green>✔</green> Running lifecycle script \\"<bold>precommit</bold>\\"",
+  ],
+  Array [
+    "<blue>ℹ</blue> - execute command: \\"<bold>echo \\"precommit lifecycle mock\\"</bold>\\"",
+  ],
+  Array [
+    "<green>✔</green> committing <bold>undefined</bold>",
+  ],
+  Array [
+    Array [
+      Object {
+        "bumpFiles": Array [],
+        "releaseCommitMessageFormat": "precommit lifecycle mock
+",
+        "scripts": Object {
+          "postcommit": "echo \\"postcommit lifecycle mock\\"",
+          "precommit": "echo \\"precommit lifecycle mock\\"",
+          "prerelease": "echo \\"prerelease lifecycle mock\\"",
+        },
+        "skip": Object {},
+      },
+      "git",
+      Array [
+        "add",
+        undefined,
+      ],
+    ],
+  ],
+  Array [
+    Array [
+      Object {
+        "bumpFiles": Array [],
+        "releaseCommitMessageFormat": "precommit lifecycle mock
+",
+        "scripts": Object {
+          "postcommit": "echo \\"postcommit lifecycle mock\\"",
+          "precommit": "echo \\"precommit lifecycle mock\\"",
+          "prerelease": "echo \\"prerelease lifecycle mock\\"",
+        },
+        "skip": Object {},
+      },
+      "git",
+      Array [
+        "commit",
+        undefined,
+        "-m",
+        "precommit lifecycle mock
+",
+      ],
+    ],
+  ],
+  Array [
+    "<green>✔</green> Running lifecycle script \\"<bold>postcommit</bold>\\"",
+  ],
+  Array [
+    "<blue>ℹ</blue> - execute command: \\"<bold>echo \\"postcommit lifecycle mock\\"</bold>\\"",
+  ],
+]
+`;
+
+exports[`commit should skip returning changelog and bump information: console 1`] = `
+Array [
+  Array [
+    "<green>✔</green> committing %s",
+  ],
+]
+`;
+
+exports[`commit should skip returning commit information: console 1`] = `Array []`;

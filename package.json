@@ -5,9 +5,12 @@
   "bin": "bin/cli.js",
   "scripts": {
     "fix": "eslint . --fix",
-    "posttest": "eslint .",
-    "test": "nyc mocha --timeout=30000",
-    "test:unit": "mocha --exclude test/git.spec.js",
+    "pretest": "eslint .",
+    "test": "nyc mocha --recursive --timeout=30000",
+    "test:dev": "jest --watch",
+    "test:integration-dev": "mocha --recursive --exclude test/git.spec.js --watch",
+    "test:lint": "eslint .",
+    "test:unit": "mocha --recursive --exclude test/git.spec.js",
     "coverage": "nyc report --reporter=lcov",
     "release": "bin/cli.js"
   },
@@ -15,6 +18,20 @@
     "exclude": [
       "tmp/**"
     ]
+  },
+  "jest": {
+    "roots": [
+      "lib"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 50,
+        "functions": 50,
+        "lines": 50,
+        "statements": 50
+      }
+    },
+    "setupFilesAfterEnv": ["<rootDir>jest.setupTests.js"]
   },
   "repository": "conventional-changelog/standard-version",
   "engines": {
@@ -58,9 +75,12 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-babel": "^5.3.1",
     "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.5.3",
+    "eslint-plugin-mocha": "^10.0.5",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-promise": "^6.0.0",
+    "jest": "^28.1.2",
     "mocha": "^8.2.1",
     "mock-fs": "^4.13.0",
     "mockery": "^2.1.0",

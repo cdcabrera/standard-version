@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`command should return generated commands: generated 1`] = `
+Object {
+  "$0": "node_modules/jest-worker/build/workers/processChild.js",
+  "_": Array [],
+  "a": false,
+  "bump-files": Array [
+    "package.json",
+    "bower.json",
+    "manifest.json",
+    "package-lock.json",
+    "npm-shrinkwrap.json",
+  ],
+  "bumpFiles": Array [
+    "package.json",
+    "bower.json",
+    "manifest.json",
+    "package-lock.json",
+    "npm-shrinkwrap.json",
+  ],
+  "commit-all": false,
+  "commit-url-format": "{{host}}/{{owner}}/{{repository}}/commit/{{hash}}",
+  "commitAll": false,
+  "commitUrlFormat": "{{host}}/{{owner}}/{{repository}}/commit/{{hash}}",
+  "compare-url-format": "{{host}}/{{owner}}/{{repository}}/compare/{{previousTag}}...{{currentTag}}",
+  "compareUrlFormat": "{{host}}/{{owner}}/{{repository}}/compare/{{previousTag}}...{{currentTag}}",
+  "dry-run": false,
+  "dryRun": false,
+  "f": false,
+  "first-release": false,
+  "firstRelease": false,
+  "git-tag-fallback": true,
+  "gitTagFallback": true,
+  "header": "# Changelog
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+",
+  "i": "CHANGELOG.md",
+  "infile": "CHANGELOG.md",
+  "issue-prefixes": Array [
+    "#",
+  ],
+  "issue-url-format": "{{host}}/{{owner}}/{{repository}}/issues/{{id}}",
+  "issuePrefixes": Array [
+    "#",
+  ],
+  "issueUrlFormat": "{{host}}/{{owner}}/{{repository}}/issues/{{id}}",
+  "n": false,
+  "no-verify": false,
+  "noVerify": false,
+  "package-files": Array [
+    "package.json",
+    "bower.json",
+    "manifest.json",
+  ],
+  "packageFiles": Array [
+    "package.json",
+    "bower.json",
+    "manifest.json",
+  ],
+  "pre-major": false,
+  "preMajor": false,
+  "preset": undefined,
+  "release-commit-message-format": "chore(release): {{currentTag}}",
+  "releaseCommitMessageFormat": "chore(release): {{currentTag}}",
+  "s": false,
+  "scripts": Object {},
+  "sign": false,
+  "silent": false,
+  "skip": Object {},
+  "t": "v",
+  "tag-prefix": "v",
+  "tagPrefix": "v",
+  "types": Array [
+    Object {
+      "section": "Features",
+      "type": "feat",
+    },
+    Object {
+      "section": "Bug Fixes",
+      "type": "fix",
+    },
+    Object {
+      "hidden": true,
+      "section": "Tests",
+      "type": "test",
+    },
+    Object {
+      "hidden": true,
+      "section": "Build System",
+      "type": "build",
+    },
+    Object {
+      "hidden": true,
+      "type": "ci",
+    },
+  ],
+  "user-url-format": "{{host}}/{{user}}",
+  "userUrlFormat": "{{host}}/{{user}}",
+}
+`;

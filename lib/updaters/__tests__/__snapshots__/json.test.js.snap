@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`json updaters should read version information: read 1`] = `"lorem ipsum"`;
+
+exports[`json updaters should return the private prop: isPrivate 1`] = `"hello world"`;
+
+exports[`json updaters should return version information to write: write 1`] = `
+"{
+  \\"version\\": \\"dolor sit\\"
+}
+"
+`;
