@@ -12,10 +12,10 @@ require('chai').should();
 
 function exec(opt = '') {
   if (typeof opt === 'string') {
-    const cli = require('../command');
+    const cli = require('../lib/command');
     opt = cli.parse(`standard-version ${opt}`);
   }
-  return require('../index')(opt);
+  return require('../lib/index')(opt);
 }
 
 function writePackageJson(version, option) {

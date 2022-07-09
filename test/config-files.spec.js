@@ -11,10 +11,10 @@ const stdMocks = require('std-mocks');
 require('chai').should();
 
 function exec() {
-  const cli = require('../command');
+  const cli = require('../lib/command');
   const opt = cli.parse('standard-version');
   opt.skip = { commit: true, tag: true };
-  return require('../index')(opt);
+  return require('../lib/index')(opt);
 }
 
 /**
